@@ -35,9 +35,18 @@ def card_metric(label, value, help_text=None):
 st.markdown(
     """
     <style>
-    .main {background: #f7faf8;}
-    [data-testid="stMetric"] {background: white; border: 1px solid #e3ece6;
+    .main, [data-testid="stAppViewContainer"], [data-testid="stHeader"] {background: #f7faf8;}
+    [data-testid="stMetric"] {background: #ffffff; border: 1px solid #e3ece6;
       padding: 16px; border-radius: 14px; box-shadow: 0 2px 8px #173d2410;}
+    [data-testid="stMetric"] label,
+    [data-testid="stMetricLabel"],
+    [data-testid="stMetricValue"],
+    [data-testid="stMetricValue"] > div,
+    [data-testid="stMetricDelta"] {color: #123b27 !important;}
+    h1, h2, h3, h4, p, label, [data-testid="stMarkdownContainer"] {color: #123b27;}
+    [data-testid="stMetric"] [data-testid="stMarkdownContainer"] p {color: #527060 !important;}
+    [data-testid="stSidebar"] {background: #eef7f0;}
+    [data-testid="stSidebar"] * {color: #214c32;}
     .hero {padding: 8px 0 18px 0;}
     .hero h1 {color: #123b27; margin-bottom: 4px;}
     .hero p {color: #527060; font-size: 1.05rem;}
