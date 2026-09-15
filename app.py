@@ -43,7 +43,7 @@ st.markdown(
     [data-testid="stMetricValue"],
     [data-testid="stMetricValue"] > div,
     [data-testid="stMetricDelta"] {color: #123b27 !important;}
-    h1, h2, h3, h4, p, label, [data-testid="stMarkdownContainer"] {color: #123b27;}
+    h1, h2, h3, h4, p, label, [data-testid="stMarkdownContainer"] {color: #1e5aa8;}
     [data-testid="stMetric"] [data-testid="stMarkdownContainer"] p {color: #527060 !important;}
     [data-testid="stSidebar"] {background: #eef7f0;}
     [data-testid="stSidebar"] * {color: #214c32;}
