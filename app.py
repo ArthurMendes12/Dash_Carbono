@@ -73,8 +73,16 @@ with st.sidebar:
     st.divider()
     st.header("Fatores de emissão")
     st.caption("kg CO₂e por litro ou kWh. Ajuste conforme sua fonte de dados.")
+    st.caption("Valores padrão: gasolina 2,31 • etanol 1,50 • diesel 2,68 • eletricidade 0,08")
     fatores = {
-        chave: st.number_input(chave, min_value=0.0, value=valor, step=0.01, format="%.2f")
+        chave: st.number_input(
+            chave,
+            min_value=0.0,
+            value=DEFAULT_FACTORS[chave],
+            step=0.01,
+            format="%.2f",
+            help=f"Valor padrão utilizado: {DEFAULT_FACTORS[chave]:.2f} kg CO₂e por unidade.",
+        )
         for chave, valor in DEFAULT_FACTORS.items()
     }
     st.divider()
