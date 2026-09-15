@@ -36,7 +36,7 @@ st.markdown(
     """
     <style>
     .main, [data-testid="stAppViewContainer"], [data-testid="stHeader"] {background: #f7faf8;}
-    [data-testid="stMetric"] {background: #ffffff; border: 1px solid #e3ece6;
+    [data-testid="stMetric"] {background: #000000; border: 1px solid #e3ece6;
       padding: 16px; border-radius: 14px; box-shadow: 0 2px 8px #173d2410;}
     [data-testid="stMetric"] label,
     [data-testid="stMetricLabel"],
